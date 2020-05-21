@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'cac_champagneregular';
+    src: url('cac_champagne-webfont.eot');
+    src: url('cac_champagne-webfont.eot?#iefix') format('embedded-opentype'),
+         url('cac_champagne-webfont.woff2') format('woff2'),
+         url('cac_champagne-webfont.woff') format('woff'),
+         url('cac_champagne-webfont.ttf') format('truetype'),
+         url('cac_champagne-webfont.svg#cac_champagneregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 970px;
+  }
+   …
+}
+a:link, a:visited {
+	color:#888888;
+	text-decoration:none;
+}
+a:active /* Quand le visiteur clique sur le lien */
+{
+    background-color: gray;
+}
+a:hover {
+	color:gray;
+	text-decoration:underline;
+}
+
+
+html {
+	background:#888888; /*#FFFF;*/
+	overflow: auto;
+	margin:20px 0 0 -180px ;
+	padding:auto;
+	width:auto;
+
+}
+body {
+	padding:auto;
+	display:flex; 
+	width:auto;	
+	color:#888888;	
+	font-family: 'cac_champagneregular', Helvetica, Arial, sans-serif ;
+}
+
+
+#bg {
+
+	background:transparent ;
+ 	display:flex-inline;	
+	font-family: Helvetica, Arial,'Play', sans-serif;
+    text-align:Left;
+    color:#424242;
+    width:auto;
+	font-size:12px  ;
+	padding-left:auto;
+	margin:auto;
+
+}
+
+
+
+h1 {
+	
+	font-family: 'cac_champagneregular', Helvetica, Arial, sans-serif ;
+	color:#424242;
+	clear:both;
+	text-decoration :blink;
+	text-align:center;
+ 
+}
+
+
+nav {
+	display: flex-inline-table;
+	flex-direction: column;
+	padding:15px;
+	height:auto;
+	width:auto;	
+	text-align:center;
+	font-size: 15px;
+	font-family: Helvetica, 'Play', sans-serif;
+
+}
+
+#submit-button {
+  background-color: #15DEA5;
+}
+
+.button {
+  background-color: #DB464B;
+}
+
+
+
+
