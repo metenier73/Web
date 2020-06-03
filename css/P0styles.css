@@ -9,93 +9,79 @@
     font-weight: normal;
     font-style: normal;
 }
-
-@media all and (max-device-width: 480px)
-{
-    /* Vos règles CSS pour les mobiles ici */
-}
-
-@media (min-width: 900px) {
+@media (min-width: 992px) {
   .container {
-    max-width: auto;
+    max-width: 970px;
   }
+   …
 }
-
-/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1280px */
-@media screen and (max-width: 1280px)
-.container {
-    max-width: auto;
-  }
-  
-/* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
-@media all and (min-width: 1024px) and (max-width: 1280px)
-.container {
-    max-width: auto;
-  }
-  
-/* Sur les téléviseurs */
-@media tv
-
-/* Sur tous types d'écrans orientés verticalement */
-@media all and (orientation: portrait)
-
 a:link, a:visited {
 	color:#888888;
 	text-decoration:none;
 }
-
 a:active /* Quand le visiteur clique sur le lien */
 {
     background-color: gray;
 }
-
 a:hover {
 	color:gray;
 	text-decoration:underline;
 }
 
 
+
+
 html {
 	background:#888888; /*#FFFF;*/
 	overflow: auto;
-	margin:auto  ;
-	padding:auto ;
+	margin:50px ;
+	padding:auto;
 	width:auto;
-
 
 }
 
-
 body {
-	padding:20px ;
-
-	display:flex-inline-table; 
+	padding:auto;
+	display:flex; 
 	width:auto;	
 	color:#888888;	
 	font-family: 'cac_champagneregular', Helvetica, Arial, sans-serif ;
-
 }
 
-
-#bg {
+#bg2 {
 
 	background:transparent ;
- 	display:block;	
+ 	display:flex-inline;	
 	background-position: auto;
 	font-family: Helvetica, Arial,'Play', sans-serif;
     text-align:Left;
-    color:##424242;
+    color:#888888;
     width:auto;
 	font-size:12px  ;
-	margin:20px;
-	padding:70px ;
+	padding-left:auto;
+margin:auto;
 
 }
 
+.element{
+	font-family:  Arial, sans-serif ;	
+	font-style: normal ;
+	font-variant:normal;
+	list-style-position:outside;
+	font-size: 15px;	
+	align-items:left;
+	font-weight:none;
+	font-style:normal;	
+	color:#888888; 
+	font: normal;
+}
 
+.element:hover >.infoBulle{
+	transform :scale(1) rotateX(180deg);
+	margin-left:auto;	
+}
 
 h1 {
-	
 	font-family: 'cac_champagneregular', Helvetica, Arial, sans-serif ;
 	color:#424242;
 	clear:both;
@@ -103,6 +89,17 @@ h1 {
 	text-align:center;
  
 }
+
+
+h2 {
+	font-family: 'cac_champagneregular',Helvetica, Arial, sans-serif ;
+	color:#424242;
+	font-size:30px ;
+	margin:auto;
+	clear:both;
+	text-align:center;	
+}
+
 h3 {
 	font-family: 'cac_champagneregular', Helvetica, Arial, sans-serif ;
 	color:#424242;
@@ -110,6 +107,53 @@ h3 {
 	text-decoration :blink;
 	text-align:center;
 }
+
+
+
+#p1 {
+	font-family: Helvetica, Arial, sans-serif ;
+	margin:20px ;
+	font-size:15px;
+	color:#424242;
+	letter-spacing: normal ;
+	padding:20px;
+	text-align:center;
+
+}
+
+
+
+.imageFlottante{
+	float: center;
+	margin:50px;
+}
+.infoBulle{
+transform : scale(0) rotateX(-360deg);
+position : absolute;
+background-color : #888888;
+border-radius : 5px;
+padding : 8px ;
+margin-top : 10px;
+box-shadow : 1px 1px 0 0.5px rgba(0,0,0,0.3);
+border-bottom : 3px solid rgba(255,255,255,0.3);
+border-left:10px solid transparent;
+border-right: 10px solid transparent;
+transition: 1s;
+
+}
+
+.infoBulle::before{
+	content:'';
+	position:absolute;
+	border-bottom:8px solid #2e3048;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	margin-top:-16px;
+	margin-left:10px;	
+	
+}
+
+
 
 
 nav {
@@ -124,13 +168,11 @@ nav {
 
 }
 
-#submit-button {
-  background-color: #15DEA5;
-}
 
-.button {
-  background-color: #DB464B;
-}
+
+
+
+
 
 
 
@@ -161,5 +203,3 @@ nav {
   padding: 1.5rem;
   color: #424242;
 }
-
-

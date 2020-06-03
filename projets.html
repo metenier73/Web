@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="css/cacchampagne/stylesheet.css" type="text/css" />
   <title>CV électronique</title>
   </head>
-    <header>    
+     <header>    
         <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -39,17 +39,14 @@
           </ul>
         </div><!--/.nav-collapse -->
       </div>
-    </nav>
-     
-    </header>
-  <body>   
+	 </nav>
+    </header> 
+	<body>
   
-  
+		<div class="bg">
+		
 		<div class="container">
 		    <h3> Projets</h3>
-
-		
-			
 			<div class="row">
 			<div class="panel panel-default col-lg-12">
 			 <div id='p1'>
@@ -65,25 +62,26 @@
 				<div class="infoBulle">
 				<img src="images/GitHub.png" alt="Dossier" title="Cliquez pour agrandir" />
 				</div>
-																	
+				</div> 
+													
 				<div class="element">
-				<a	href="https://www.flickr.com/gp/ridesnow/Z8R7Ay"onclick="window.open(this.href);return false" >Photo </a>
+				Galery (<a	href="https://www.flickr.com/gp/ridesnow/Z8R7Ay"onclick="window.open(this.href);return false" >Photo </a>)
 				<div class="infoBulle">
 				<img src="images/photoM.jpg" alt="Dossier" title="Cliquez pour agrandir" />					
 				</div>
-				</div></br>
-				<div class="element">
-				<h5> <u>  Ftp :</u> </h5>
+				</div>
+				
+				<h5> <em>  Ftp </em> </h5>
 
+				<div class="element">
 				<div class="infoBulle">
 				<img src="images/Ftp.png" alt="Dossier" title="Cliquez pour agrandir" />
 				</div>
-				<br/><a href="http://mmetenier.free.fr/Ecv/src/"onclick="window.open(this.href);return false" >Ecv</a>  
-				<br/><a href="http://mmetenier.free.fr/Web/"onclick="window.open(this.href);return false" >Ecv2</a>  
-
+				<a href="http://mmetenier.free.fr/Ecv/src/"onclick="window.open(this.href);return false" >Ecv</a>  
 				</div>
 				
 				<h4><em>Documentation numérique </em></h4>
+
 				<div class="element">
 				<a href="http://meteniermyriam.wixsite.com/veille"onclick="window.open(this.href);return false">Ma Veille technologique</a>
 				<div class="infoBulle">
@@ -96,51 +94,41 @@
 				<img src="images/wiki.jpg" alt="resurgences" title="Cliquez pour agrandir" />
 				</div>
 				</div>
-				</br>
+		
 				<h4><em>Sites</em></h4>
 				<div class="element">
-				<a href="https://meteniermyriam.wixsite.com/snowride"onclick="window.open(this.href);return false">RideSnow</a>
+				<a href="https://meteniermyriam.wixsite.com/snowride73"onclick="window.open(this.href);return false">Ride Snow</a>
 				<div class="infoBulle">
 				<img src="images/imagsnowride.png" alt="Site monitrice de ski & snowboard" title="Cliquez pour agrandir" />
 				</div>
 				</div> 
 				<div class="element">
-				<a href="http://snowride/"onclick="window.open(this.href);return false">SnowRide</a>
-				<div class="infoBulle">
-				<img src="images/snowRide.png" alt="Site monitrice de ski & snowboard" title="Cliquez pour agrandir" />
-				</div>
-				</div>
-				<div class="element">
-				<a href="http://maboutiqueperso/version%20finale/"onclick="window.open(this.href);return false">Ma Boutique Perso </a>
-				<div class="infoBulle">
-				<img src="image/MaBoutiquePersonnelle.png" alt="Boutique ti-shirt" title="Cliquez pour agrandir" />
-				</div>
-				</div>
-				<div class="element">
-				<a href="http://monappweb/"onclick="window.open(this.href);return false">Mon application web </a>
-				<div class="infoBulle">
-				<img src="images/imageMonapplicationweb.png" alt="ma Calculatrice" title="Cliquez pour agrandir" />
-				</div>
-				</div>
-				<div class="element">
-				<a href="http://gbs/"onclick="window.open(this.href);return false"> GBS </a>
-				<div class="infoBulle">
-				<img src="images/GBS.png" alt="Photo de montagne" title="Cliquez pour agrandir" />
-				</div>
-				</div></br>
+					<a href="https://meteniermyriam.wixsite.com/mapizza"onclick="window.open(this.href);return false">Pizza Maison</a>
+					<div class="infoBulle">
+					<img src="images/imagsnowride.png" alt="Site monitrice de ski & snowboard" title="Cliquez pour agrandir" />
+					</div>
+				</div> 
+				
+			
 				
 				
 				<!---	<img src="image/dropboxInv.png" alt="Nous &eacute;crire" title="dropbox" width="200" height="200"
 								onemouseover ="this.src='dropBox.png'" onemouseout="this.src='image/dropboxInv.png'"
 							/></a><br /> <br /> <br />-->		
 						
-			</div> 
-			</div> 
+			 </div> 
 			</div> 
 			</div> 
 
 		</div>  
-			
+	</div>  
+	
 
+	<script  src="https://code.jquery.com/jquery-1.11.1.js"  integrity="sha256-MCmDSoIMecFUw3f1LicZ/D/yonYAoHrgiep/3pCH9rw="  crossorigin="anonymous"></script>
+<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+function afficheMenu(obj){ var idMenu = obj.id; var idSousMenu = 'sous' + idMenu; var sousMenu = document.getElementById(idSousMenu); /*****************************************************/ /** si le sous-menu correspondant au menu cliqué **/ /** est caché alors on l'affiche, sinon on le cache **/ /*****************************************************/ if(sousMenu.style.display == "none"){ sousMenu.style.display = "block"; } else{ sousMenu.style.display = "none"; } }//--><!]]></script>  
+      
   </body>
 </html>

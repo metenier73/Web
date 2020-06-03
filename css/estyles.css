@@ -11,20 +11,44 @@
     font-style: normal;
 }
 
-@media (min-width: 992px) {
-  .container {
-    max-width: 970px;
-  }
-   …
+@media all and (max-device-width: 480px)
+{
+    /* Vos règles CSS pour les mobiles ici */
 }
+
+@media (min-width: 900px) {
+  .container {
+    max-width: auto;
+  }
+}
+
+/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1280px */
+@media screen and (max-width: 1280px)
+.container {
+    max-width: auto;
+  }
+  
+/* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
+@media all and (min-width: 1024px) and (max-width: 1280px)
+.container {
+    max-width: auto;
+  }
+/* Sur les téléviseurs */
+@media tv
+
+/* Sur tous types d'écrans orientés verticalement */
+@media all and (orientation: portrait)
+
 a:link, a:visited {
 	color:#888888;
 	text-decoration:none;
 }
+
 a:active /* Quand le visiteur clique sur le lien */
 {
     background-color: gray;
 }
+
 a:hover {
 	color:gray;
 	text-decoration:underline;
@@ -58,8 +82,8 @@ article{
 html {
 	background:#888888; /*#FFFF;*/
 	overflow: auto;
-	margin:50px ;
-	padding:15px;
+	margin:auto;
+	padding:auto;
 	width:auto;
 	text-align:center;
 
@@ -73,20 +97,34 @@ body {
 	padding:auto;
 
 }
-
-#bg1 {
+#bg {
 
 	background:transparent ;
- 	display:flex-inline-table;	
+ 	display:block;	
 	font-family: Helvetica, Arial,'Play', sans-serif;
     text-align:center;
     color:#888888;
     width:auto;
 	font-size:12px  ;
 
-	margin-left:20px;
-	padding-right:20px;
-	padding-top:130px;
+	margin-left:auto;
+	padding-right:auto;
+	padding-top:100px;
+
+}
+#bg1 {
+
+	background:transparent ;
+ 	display:block;	
+	font-family: Helvetica, Arial,'Play', sans-serif;
+    text-align:center;
+    color:#888888;
+    width:auto;
+	font-size:12px  ;
+
+	margin-left:18px;
+	padding-right:auto;
+	padding-top:200px;
 
 }
 
