@@ -13,7 +13,9 @@
 
 @media all and (max-device-width: 480px)
 {
-    /* Vos règles CSS pour les mobiles ici */
+   .container {
+    max-width: auto;
+  }
 }
 
 @media (min-width: 900px) {
@@ -40,23 +42,22 @@
 @media all and (orientation: portrait)
 
 a:link, a:visited {
-	color:#888888;
+	color:#88888;
 	text-decoration:none;
 }
 
 a:active /* Quand le visiteur clique sur le lien */
 {
-    background-color: gray;
+    background-color: transparent;
 }
 
 a:hover {
-	color:gray;
+	color:#888888;
 	text-decoration:underline;
 }
 
 
 #menu{ display: flex-inline-table; width: auto; height : auto; margin: auto;text-align:center; }
-
 #sousmenu1{ display: flex-inline-table; width: auto; height : auto; margin: auto;text-align:left; }
 
 
@@ -87,6 +88,7 @@ html {
 	width:auto;
 	text-align:center;
 
+
 }
 
 body {
@@ -100,7 +102,7 @@ body {
 #bg {
 
 	background:transparent ;
- 	display:block;	
+ 	display:flex;	
 	font-family: Helvetica, Arial,'Play', sans-serif;
     text-align:center;
     color:#888888;
@@ -109,9 +111,10 @@ body {
 
 	margin-left:auto;
 	padding-right:auto;
-	padding-top:100px;
+	padding-top:55px;
 
 }
+
 #bg1 {
 
 	background:transparent ;
@@ -124,7 +127,7 @@ body {
 
 	margin-left:18px;
 	padding-right:auto;
-	padding-top:200px;
+	padding-top:80px;
 
 }
 
@@ -212,16 +215,16 @@ nav {
 }
 
 
-#nav ul {
+ ul {
 	display:inline-table;
 	min-width:auto;	
 	margin: auto;
 	padding:auto;
 	list-style-type:none;
-	position:right;
-	height:4px;
+	position:left;
+	height:auto;
 	text-transform:uppercase;
-	font-size:13px;
+	font-size:11px;
     width:auto;
        
 	
@@ -230,17 +233,20 @@ nav {
 
 
 
-#nav ul li a:hover, #nav1 li#current a {
+ ul li a:hover{
 	color:#888888;
 	background:transparent url("image/hmenu-sel.jpg") repeat-x top right
-}	
-
+}
+	
+ li {
+	 padding:5px;	 
+ }
 
 
 img{
 display: flex-inline-table;
 max-width: auto;
-height: 50%;
+height: auto;
 padding:10px;
 
 }

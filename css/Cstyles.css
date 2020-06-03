@@ -54,6 +54,28 @@ a:hover {
 	text-decoration:underline;
 }
 
+ ul {
+	display:inline-table;
+	min-width:auto;	
+	margin: auto;
+	padding:auto;
+	list-style-type:none;
+	position:left;
+	height:auto;
+	text-transform:uppercase;
+	font-size:11px;
+    width:auto;
+       
+	
+}
+
+
+
+
+ ul li a:hover{
+	color:#888888;
+	background:transparent url("image/hmenu-sel.jpg") repeat-x top right
+}
 
 html {
 	background:#888888; /*#FFFF;*/
@@ -79,12 +101,12 @@ body {
 
 #bg {
 
-	background:transparent ;
+	background:#888888 ;
  	display:block;	
 	background-position: auto;
 	font-family: Helvetica, Arial,'Play', sans-serif;
     text-align:Left;
-    color:##424242;
+    color:#424242;
     width:auto;
 	font-size:12px  ;
 	margin:20px;
@@ -138,6 +160,7 @@ nav {
   margin: 1rem;
   padding: 1.5rem 1.5rem 0 1.5rem;
   border: 0.1rem solid transparent; 
+
   }
 
 
